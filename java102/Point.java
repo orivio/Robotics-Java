@@ -37,5 +37,18 @@ public class Point {
 
         return new Point(centerX, centerY);
     }
+
+    public double angle() {
+        double angleInRadians = Math.atan2(y, x);
+        return Math.toDegrees(angleInRadians);
+    }
+
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
     
 }
